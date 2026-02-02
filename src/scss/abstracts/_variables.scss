@@ -1,0 +1,20 @@
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+$d-flex: flex;
+$column: column;
+$center: center;
+
+//font-weight
+$extra-bold: 800;
+$bold: 700;
+$semibold: 600;
+$medium: 500;
+$regular: 400;

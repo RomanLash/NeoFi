@@ -1,0 +1,98 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1140px,
+	xxl: 1320px
+) !default;
+
+$grid-columns: 12 !default;
+$grid-gutter: 30px !default;
+
+// containers
+
+$container-max-width: 1240px !default;
+
+.container {
+	width: 100%;
+	max-width: $container-max-width;
+	padding-right: $grid-gutter;
+	padding-left:  $grid-gutter;
+	margin-right: auto;
+	margin-left:  auto;
+
+	@include breakpoint(sm) {
+		padding-right: $grid-gutter / 2;
+		padding-left:  $grid-gutter / 2;
+	}
+}
+
+.container-fluid {
+	width: 100%;
+	padding-right: $grid-gutter / 2;
+	padding-left:  $grid-gutter / 2;
+}
+
+
+// row
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -$grid-gutter / 2;
+	margin-left:  -$grid-gutter / 2;
+}
+
+.row > * {
+	box-sizing: border-box;
+	flex-shrink: 0;
+	width: 100%;
+	max-width: 100%;
+	padding-right: $grid-gutter / 2;
+	padding-left:  $grid-gutter / 2;
+}
+
+// columns
+
+.col        { flex: 1 0 0; }
+.col-auto   { flex: 0 0 auto; width: auto; }
+
+@for $i from 1 through $grid-columns {
+	.col-#{$i} { flex: 0 0 auto; width: percentage($i / $grid-columns); }
+}
+
+// Адаптивні колонки
+@each $bp-name, $bp-value in $grid-breakpoints {
+	@if $bp-name != xs {
+		@media (min-width: $bp-value) {
+			.col-#{$bp-name}       { flex: 1 0 0; }
+			.col-#{$bp-name}-auto  { flex: 0 0 auto; width: auto; }
+
+			@for $i from 1 through $grid-columns {
+				.col-#{$bp-name}-#{$i} {
+					flex: 0 0 auto;
+					width: percentage($i / $grid-columns);
+				}
+			}
+		}
+	}
+}
+
+// row-cols
+.row-cols-auto > * { flex: 0 0 auto; width: auto; }
+@for $i from 1 through 6 {
+	.row-cols-#{$i} > * { flex: 0 0 auto; width: percentage(1 / $i); }
+}
+
+@each $bp-name, $bp-value in $grid-breakpoints {
+	@if $bp-name != xs {
+		@media (min-width: $bp-value) {
+			@for $i from 1 through 6 {
+				.row-cols-#{$bp-name}-#{$i} > * { width: percentage(1 / $i); }
+			}
+		}
+	}
+}

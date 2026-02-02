@@ -1,0 +1,62 @@
+{
+	"name": "html-sass-babel-boilerplate",
+	"version": "1.1.9",
+	"description": "Simple boilerplate for building web app with babel-cli and sass.",
+	"main": "",
+	"scripts": {
+		"build": "npm run build:css && npm run build:js",
+		"build:css": "npx rimraf dist/css/*.css && npm run lint:css && npx sass src/scss/main.scss:dist/css/main.min.css --style=compressed && npx postcss dist/css/main.min.css --output dist/css/main.min.css --no-map",
+		"watch:css": "npx sass --watch --style=compressed src/scss/main.scss:dist/css/main.min.css",
+		"build:js": "npx rimraf dist/js/*.js && npm run lint:js && npx babel src/js/main.js --out-file dist/js/main.min.js --no-comments --minified --presets=@babel/preset-env && terser --compress --mangle --output dist/js/main.min.js -- dist/js/main.min.js",
+		"watch:js": "npx babel src/js/main.js --out-file dist/js/main.min.js --minified --presets=@babel/preset-env --watch",
+		"lint:js": "npx eslint src/js/**/*.js",
+		"lint:js:fix": "npx eslint src/js/**/*.js --fix",
+		"lint:css": "npx stylelint src/scss/**/*.scss",
+		"lint:css:fix": "npx stylelint src/scss/**/*.scss --fix",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"serve": "browser-sync start --server --files \"dist\" \"*.html\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/oliverfindl/html-sass-babel-boilerplate.git"
+	},
+	"keywords": [
+		"html",
+		"sass",
+		"postcss",
+		"autoprefixer",
+		"purgecss",
+		"babel",
+		"eslint",
+		"stylelint",
+		"boilerplate",
+		"html-sass-babel-boilerplate"
+	],
+	"author": "Oliver Findl",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/oliverfindl/html-sass-babel-boilerplate/issues"
+	},
+	"homepage": "https://github.com/oliverfindl/html-sass-babel-boilerplate#readme",
+	"devDependencies": {
+		"@babel/cli": "^7.13.16",
+		"@babel/core": "^7.14.2",
+		"@babel/preset-env": "^7.14.2",
+		"@fullhuman/postcss-purgecss": "^4.0.3",
+		"autoprefixer": "^10.2.5",
+		"browser-sync": "^3.0.2",
+		"eslint": "^7.26.0",
+		"postcss": "^8.2.15",
+		"postcss-cli": "^8.3.1",
+		"rimraf": "^3.0.2",
+		"sass": "^1.70.0",
+		"stylelint": "^13.13.1",
+		"stylelint-config-recommended-scss": "^4.2.0",
+		"stylelint-scss": "^3.19.0",
+		"terser": "^5.7.0"
+	},
+	"dependencies": {
+		"reset-css": "^5.0.2",
+		"scss-reset": "^1.4.2"
+	}
+}
