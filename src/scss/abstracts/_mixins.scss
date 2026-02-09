@@ -1,6 +1,7 @@
 @use "sass:math";
 @use "variables" as *;
 
+
 // контрольные точки
 @mixin breakpoint($name) {
 	$width: map-get($grid-breakpoints, $name);
@@ -16,20 +17,10 @@
 	}
 }
 
-//преобразование значений из px в rem
-
-@function rem($pixel) {
-	@if math.is-unitless($pixel) {
-		@return math.div($pixel, 16) + rem;
-	} @else {
-		@error 'Не используйте единицы измерения при работе с функцией rem()! Передавайте аргументом только числа.'
-	}
-}
-
 //адаптивный размер шрифта через clamp, rem, vw
 
 @mixin fluid-text($max: 48, $min: 16) {
-	$maxViewportWidth: 1140;
+	$maxViewportWidth: 1200;
 	$minViewportWidth: 360;
 
 	$maxSize: math.div($max, 16);

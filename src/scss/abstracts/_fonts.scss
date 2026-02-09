@@ -1,13 +1,22 @@
 @use "variables" as *;
 
-/*
 @font-face {
-	font-family: "Open Sans";
+	font-family: "Alexandria";
 	src:
-		url("") format("woff2"),
-		url("") format("woff");
-	font-weight: ;
+		url("/fonts/Alexandria-Regular.woff2") format("woff2"),
+		url("/fonts/Alexandria-Regular.woff") format("woff");
+	font-weight: $regular;
 	font-style: normal;
 	font-display: swap;
 }
-*/
+
+
+@font-face {
+	font-family: "Inter";
+	src:
+		url("/fonts/Inter-Regular.woff2") format("woff2"),
+		url("/fonts/Inter-Regular.woff") format("woff");
+	font-weight: $regular;
+	font-style: normal;
+	font-display: swap;
+}

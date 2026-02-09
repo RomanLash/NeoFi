@@ -1,2 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
+.footer {
+	background-color: lightblue;
+	padding-block: 60px;
+}

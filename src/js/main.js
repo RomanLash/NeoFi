@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 	// Бургер-меню
 	const burger = document.querySelector(".header__burger");
-	const menu = document.querySelector(".header__nav-bar");
+	const menu = document.querySelector(".header__nav-wrapper");
 
 	if (!burger || !menu) return;
 
@@ -30,4 +30,13 @@ document.addEventListener("DOMContentLoaded", function() {
 			menu.classList.remove("is-active");
 		}
 	});
+
+	// дублюваняя header__actions в mobile nav
+	const actions = document.querySelector(".header__actions");
+	const navWrapper = document.querySelector(".header__nav-wrapper");
+
+	// Клонувати і додати в меню (найпростіше)
+	const actionsMobile = actions.cloneNode(true);
+	actionsMobile.classList.add("actions--mobile");
+	navWrapper.appendChild(actionsMobile);
 });

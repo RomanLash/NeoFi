@@ -2,3 +2,218 @@
 @use "../abstracts/mixins" as *;
 
 
+.header {
+	position: relative;
+	padding-block: 20px;
+	background-color: black;
+
+	&__inner {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 1001;
+
+		span {
+			@include breakpoint(md) {
+				@include fluid-text(22, 16);
+			}
+		}
+	}
+
+	&__nav-wrapper {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 100%;
+		height: 100vh;
+		transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+		padding-top: 72px;
+		overflow-y: auto;
+
+		//mobile
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		gap: 70px;
+		background: $black-color;
+
+		&.is-active {
+			right: 0;
+		}
+
+		@include breakpoint(md) {
+			position: static;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: auto;
+			height: auto;
+			max-width: none;
+			background: transparent;
+			padding-top: 0;
+			overflow: visible;
+		}
+	}
+
+	&__nav-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+
+		@include breakpoint(md) {
+			display: flex;
+			flex-direction: row;
+
+			gap: 30px;
+		}
+
+		@include breakpoint(lg) {
+			gap: 40px;
+		}
+
+		a {
+			font-size: $fs-md;
+			line-height: 19px;
+			color: $grey-light;
+			transition: color 0.5s ease-in-out;
+
+			&:hover,
+			&:focus {
+				color: $white-color;
+			}
+
+			@include breakpoint(md) {
+				@include fluid-text(16,14);
+			}
+		}
+	}
+
+	&__actions {
+		display: none;
+
+		@include breakpoint(md) {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 8px;
+		}
+
+		@include breakpoint(lg) {
+			gap: 16px;
+		}
+	}
+
+	.actions--mobile {
+		display: flex;
+		align-items: center;
+		gap: $fs-base;
+
+		@include breakpoint(md) {
+			display: none;
+		}
+	}
+
+	&__login {
+		padding-block: 8px;
+		padding-inline: 24px;
+		border-radius: 40px;
+		color: $white-color;
+		white-space: nowrap;
+		transition: 0.25s;
+
+		@include breakpoint(md) {
+			@include fluid-text(16, 10);
+			padding-inline: $fs-xs;
+		}
+
+		@include breakpoint(lg) {
+			padding-inline: 24px;
+		}
+
+		&:hover,
+		&:focus-visible {
+			box-shadow: -5px -5px 5px -5px rgba(255, 255, 255, 0.79) inset;
+			transform: scale(1.06);
+		}
+	}
+
+	&__btn {
+		display: flex;
+		flex-shrink: 0;
+		transition: 0.25s;
+		padding-inline: 20px;
+
+		@include breakpoint(md) {
+			@include fluid-text(16, 10);
+			padding-inline: $fs-lg;
+			padding-block: 8px;
+		}
+
+		@include breakpoint(lg) {
+			padding-inline: 24px;
+			padding-block: $fs-xs;
+		}
+
+		&:hover,
+		&:focus-visible {
+			background-color: lighten($green-color, 8%);
+			transform: scale(1.06);
+			box-shadow: 0 8px 24px -6px color-mix(in srgb, $green-color 40%, transparent);
+		}
+	}
+}
+
+.header__burger {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 30px;
+	gap: 4px;
+	padding: 6px 3px;
+	cursor: pointer;
+	margin-left: auto;
+	z-index: 1001;
+
+	@include breakpoint(md) {
+		display: none;
+	}
+
+	.burger-line {
+		background-color: white;
+		width: 100%;
+		height: 3px;
+		border-radius: 3px;
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+		transform-origin: center;
+
+		&:nth-child(2) {
+			transition: opacity 0.2s ease;
+		}
+	}
+
+	&.is-active {
+
+		.burger-line {
+
+			&:nth-child(1) {
+				transform: translateY(7px) rotate(45deg);
+			}
+
+			&:nth-child(2) {
+				opacity: 0;
+				transform: scaleX(0);
+			}
+
+			&:nth-child(3) {
+				transform: translateY(-7px) rotate(-45deg);
+			}
+		}
+	}
+}

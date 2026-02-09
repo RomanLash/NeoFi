@@ -1,0 +1,89 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.000000" height="48.000000" fill="none">
+	<defs>
+		<filter id="pixso_custom_mask_type_outline">
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 " />
+		</filter>
+		<clipPath id="clipPath_2">
+			<rect width="48.000000" height="48.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_3">
+			<rect width="48.000000" height="48.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+	</defs>
+	<mask id="mask_1" width="48.000000" height="48.000000" x="0.000000" y="0.000000" maskUnits="objectBoundingBox">
+		<g filter="url(#pixso_custom_mask_type_outline)">
+			<g id="a">
+				<path id="Vector" d="M0 48L48 48L48 0L0 0L0 48Z" fill="rgb(255,255,255)" fill-rule="nonzero" transform="matrix(1,0,0,-1,0,48)" />
+			</g>
+		</g>
+	</mask>
+	<rect id="Icons" width="48.000000" height="48.000004" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Network" mask="url(#mask_1)">
+		<g id="Group">
+			<path id="Vector" d="M0 0C0.792845 0.907434 1.65759 1.74945 2.58581 2.51784" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,8.35938,9.26843)" />
+			<path id="Vector" d="M0 0C0.792845 0.907434 1.65759 1.74945 2.58581 2.51784" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,8.35938,9.26843)" />
+			<path id="Vector" d="M0 0C0.551328 2.39656 1.4958 4.68525 2.79506 6.77316" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,3.41064,18.9503)" />
+			<path id="Vector" d="M0 0C0.551328 2.39656 1.4958 4.68525 2.79506 6.77316" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,3.41064,18.9503)" />
+			<path id="Vector" d="M7.96575 0C3.09656 4.09744 0 10.2519 0 17.1333C0 17.3947 0.00450055 17.655 0.0133131 17.9141" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,2.84082,41.1333)" />
+			<path id="Vector" d="M7.96575 0C3.09656 4.09744 0 10.2519 0 17.1333C0 17.3947 0.00450055 17.655 0.0133131 17.9141" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,2.84082,41.1333)" />
+			<path id="Vector" d="M21.5097 2.793C18.3189 1.01344 14.6465 0 10.7385 0C6.84384 0 3.18319 1.0065 0 2.77491" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,14.3301,46.3369)" />
+			<path id="Vector" d="M21.5097 2.793C18.3189 1.01344 14.6465 0 10.7385 0C6.84384 0 3.18319 1.0065 0 2.77491" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,14.3301,46.3369)" />
+			<path id="Vector" d="M4.5645 28.9615C6.70622 25.5278 7.94447 21.4669 7.94447 17.1154C7.94447 10.2441 4.857 4.09744 0 0" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,39.353,41.1152)" />
+			<path id="Vector" d="M4.5645 28.9615C6.70622 25.5278 7.94447 21.4669 7.94447 17.1154C7.94447 10.2441 4.857 4.09744 0 0" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,39.353,41.1152)" />
+			<path id="Vector" d="M0 2.16272C0.822547 1.49741 1.59695 0.7747 2.31741 0" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,38.9951,8.75183)" />
+			<path id="Vector" d="M0 2.16272C0.822547 1.49741 1.59695 0.7747 2.31741 0" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,38.9951,8.75183)" />
+			<path id="Vector" d="M0 0C3.15056 1.72078 6.76153 2.69831 10.5997 2.69831C14.3392 2.69831 17.8632 1.77028 20.9558 0.130969" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,14.4697,4.36133)" />
+			<path id="Vector" d="M0 0C3.15056 1.72078 6.76153 2.69831 10.5997 2.69831C14.3392 2.69831 17.8632 1.77028 20.9558 0.130969" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,14.4697,4.36133)" />
+			<path id="Vector" d="M0 0C2.50359 1.55803 5.26153 2.78259 8.22534 3.6" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,26.9297,9.47144)" />
+			<path id="Vector" d="M0 0C2.50359 1.55803 5.26153 2.78259 8.22534 3.6" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,26.9297,9.47144)" />
+			<path id="Vector" d="M0 0C1.60729 2.28212 3.50949 4.34152 5.65706 6.12459" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,17.8228,18.0847)" />
+			<path id="Vector" d="M0 0C1.60729 2.28212 3.50949 4.34152 5.65706 6.12459" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,17.8228,18.0847)" />
+			<path id="Vector" d="M0.236068 0C-0.564088 6.54178 0.700974 12.9272 3.55857 18.4375" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,12.0273,40.2014)" />
+			<path id="Vector" d="M0.236068 0C-0.564088 6.54178 0.700974 12.9272 3.55857 18.4375" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,12.0273,40.2014)" />
+			<path id="Vector" d="M8.52666 0C5.93841 1.61072 3.07837 2.865 0 3.68156" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,14.6807,9.47156)" />
+			<path id="Vector" d="M8.52666 0C5.93841 1.61072 3.07837 2.865 0 3.68156" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,14.6807,9.47156)" />
+			<path id="Vector" d="M8.71153 0C6.73416 4.43887 3.75506 8.38772 0 11.5036" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,26.6587,23.4637)" />
+			<path id="Vector" d="M8.71153 0C6.73416 4.43887 3.75506 8.38772 0 11.5036" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,26.6587,23.4637)" />
+			<path id="Vector" d="M0.923906 0C0.712632 1.42776 0.403943 2.8394 0 4.22503" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,36.8477,31.7161)" />
+			<path id="Vector" d="M0.923906 0C0.712632 1.42776 0.403943 2.8394 0 4.22503" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,36.8477,31.7161)" />
+			<path id="Vector" d="M0 0C0.186244 1.48145 0.268258 2.97415 0.245437 4.46709" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,37.8618,40.3079)" />
+			<path id="Vector" d="M0 0C0.186244 1.48145 0.268258 2.97415 0.245437 4.46709" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,37.8618,40.3079)" />
+			<path id="Vector" d="M9.70097 1.06031C6.49884 1.07662 3.24844 0.733031 0 0" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,4.91211,20.537)" />
+			<path id="Vector" d="M9.70097 1.06031C6.49884 1.07662 3.24844 0.733031 0 0" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,4.91211,20.537)" />
+			<path id="Vector" d="M15.4535 0C10.6863 2.49919 5.44866 4.11244 0 4.68731" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,18.8721,24.3989)" />
+			<path id="Vector" d="M15.4535 0C10.6863 2.49919 5.44866 4.11244 0 4.68731" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,18.8721,24.3989)" />
+			<path id="Vector" d="M7.49034 0C5.23601 2.35355 2.72334 4.44525 0 6.23541" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,38.0127,32.8053)" />
+			<path id="Vector" d="M7.49034 0C5.23601 2.35355 2.72334 4.44525 0 6.23541" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,38.0127,32.8053)" />
+			<path id="Vector" d="M0 0C2.12993 3.42859 3.76907 7.13864 4.86966 11.022" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,37.2583,23.587)" />
+			<path id="Vector" d="M0 0C2.12993 3.42859 3.76907 7.13864 4.86966 11.022" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,37.2583,23.587)" />
+			<path id="Vector" d="M0 0C8.03606 2.77144 15.0683 7.87425 20.2155 14.5814" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,14.6123,41.6816)" />
+			<path id="Vector" d="M0 0C8.03606 2.77144 15.0683 7.87425 20.2155 14.5814" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,14.6123,41.6816)" />
+			<path id="Vector" d="M2.13759 0C0.958875 0 0 0.963562 0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27519 3.33253 4.27519 2.14809C4.27519 0.963562 3.31631 0 2.13759 0Z" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,22.9307,12.6737)" />
+			<path id="Vector" d="M0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27519 3.33253 4.27519 2.14809C4.27519 0.963562 3.31631 0 2.13759 0C0.958875 0 0 0.963562 0 2.14809Z" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,22.9307,12.6737)" />
+			<path id="Vector" d="M2.13759 0C0.958875 0 0 0.963656 0 2.14809C0 3.33253 0.958875 4.29619 2.13759 4.29619C3.31631 4.29619 4.27519 3.33253 4.27519 2.14809C4.27519 0.963656 3.31631 0 2.13759 0Z" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,14.6123,22.1118)" />
+			<path id="Vector" d="M0 2.14809C0 3.33253 0.958875 4.29619 2.13759 4.29619C3.31631 4.29619 4.27519 3.33253 4.27519 2.14809C4.27519 0.963656 3.31631 0 2.13759 0C0.958875 0 0 0.963656 0 2.14809Z" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,14.6123,22.1118)" />
+			<path id="Vector" d="M2.13759 0C0.958875 0 0 0.963656 0 2.14809C0 3.33253 0.958875 4.29619 2.13759 4.29619C3.31631 4.29619 4.27519 3.33253 4.27519 2.14809C4.27519 0.963656 3.31631 0 2.13759 0Z" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,34.0537,27.595)" />
+			<path id="Vector" d="M0 2.14809C0 3.33253 0.958875 4.29619 2.13759 4.29619C3.31631 4.29619 4.27519 3.33253 4.27519 2.14809C4.27519 0.963656 3.31631 0 2.13759 0C0.958875 0 0 0.963656 0 2.14809Z" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,34.0537,27.595)" />
+			<path id="Vector" d="M2.13759 0C0.958875 0 0 0.963562 0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27528 3.33253 4.27528 2.14809C4.27528 0.963562 3.31631 0 2.13759 0Z" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,10.4453,44.4733)" />
+			<path id="Vector" d="M0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27528 3.33253 4.27528 2.14809C4.27528 0.963562 3.31631 0 2.13759 0C0.958875 0 0 0.963562 0 2.14809Z" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,10.4453,44.4733)" />
+			<path id="Vector" d="M2.13759 0C0.958875 0 0 0.963656 0 2.14809C0 3.33253 0.958875 4.29619 2.13759 4.29619C3.31631 4.29619 4.27528 3.33253 4.27528 2.14809C4.27528 0.963656 3.31631 0 2.13759 0Z" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,35.54,44.5957)" />
+			<path id="Vector" d="M0 2.14809C0 3.33253 0.958875 4.29619 2.13759 4.29619C3.31631 4.29619 4.27528 3.33253 4.27528 2.14809C4.27528 0.963656 3.31631 0 2.13759 0C0.958875 0 0 0.963656 0 2.14809Z" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,35.54,44.5957)" />
+			<path id="Vector" d="M2.13769 0C0.958969 0 0 0.963656 0 2.14809C0 3.33253 0.958969 4.29619 2.13769 4.29619C3.31641 4.29619 4.27528 3.33253 4.27528 2.14809C4.27528 0.963656 3.31641 0 2.13769 0Z" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,40.5234,12.5649)" />
+			<path id="Vector" d="M0 2.14809C0 3.33253 0.958969 4.29619 2.13769 4.29619C3.31641 4.29619 4.27528 3.33253 4.27528 2.14809C4.27528 0.963656 3.31641 0 2.13769 0C0.958969 0 0 0.963656 0 2.14809Z" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,40.5234,12.5649)" />
+			<path id="Vector" d="M2.13759 0C0.958875 0 0 0.963562 0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27528 3.33253 4.27528 2.14809C4.27528 0.963562 3.31631 0 2.13759 0Z" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,35.0967,7.52051)" />
+			<path id="Vector" d="M0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27528 3.33253 4.27528 2.14809C4.27528 0.963562 3.31631 0 2.13759 0C0.958875 0 0 0.963562 0 2.14809Z" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,35.0967,7.52051)" />
+			<path id="Vector" d="M2.13759 0C0.958875 0 0 0.963562 0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27528 3.33253 4.27528 2.14809C4.27528 0.963562 3.31631 0 2.13759 0Z" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,10.4453,7.52051)" />
+			<path id="Vector" d="M0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27528 3.33253 4.27528 2.14809C4.27528 0.963562 3.31631 0 2.13759 0C0.958875 0 0 0.963562 0 2.14809Z" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,10.4453,7.52051)" />
+			<path id="Vector" d="M2.13759 0C0.958875 0 0 0.963562 0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27519 3.33253 4.27519 2.14809C4.27519 0.963562 3.31631 0 2.13759 0Z" fill="rgb(255,255,255)" fill-opacity="0" fill-rule="nonzero" transform="matrix(1,0,0,-1,0.703125,23.2186)" />
+			<path id="Vector" d="M0 2.14809C0 3.33253 0.958875 4.29609 2.13759 4.29609C3.31631 4.29609 4.27519 3.33253 4.27519 2.14809C4.27519 0.963562 3.31631 0 2.13759 0C0.958875 0 0 0.963562 0 2.14809Z" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" transform="matrix(1,0,0,-1,0.703125,23.2186)" />
+		</g>
+	</g>
+	<g id="Scale" opacity="0" clip-path="url(#clipPath_2)" customFrame="url(#clipPath_2)">
+		<rect id="Scale" width="48.000000" height="48.000000" x="0.000000" y="0.000000" opacity="0" fill="rgb(255,255,255)" fill-opacity="0" />
+		<path id="Vector" d="M40.5 30L40.5 40.5L30 40.5M39.5437 39.5409L28.5 28.5M7.5 18L7.5 7.5L18 7.5M8.45625 8.45906L19.5 19.5M30 7.5L40.5 7.5L40.5 18M39.5409 8.45625L28.5 19.5M18 40.5L7.5 40.5L7.5 30M8.45906 39.5437L19.5 28.5" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" />
+	</g>
+	<g id="hugeicons:blockchain-04" opacity="0" clip-path="url(#clipPath_3)" customFrame="url(#clipPath_3)">
+		<rect id="hugeicons:blockchain-04" width="48.000000" height="48.000000" x="0.000000" y="0.000000" opacity="0" fill="rgb(255,255,255)" fill-opacity="0" />
+		<path id="Vector" d="M12 18C14.83 18 16.242 18 17.12 17.12C18 16.244 18 14.83 18 12C18 9.17 18 7.758 17.12 6.88C16.244 6 14.83 6 12 6C9.17 6 7.758 6 6.88 6.88C6 7.756 6 9.17 6 12C6 14.83 6 16.242 6.88 17.12C7.756 18 9.17 18 12 18ZM36 18C38.83 18 40.242 18 41.12 17.12C42 16.244 42 14.83 42 12C42 9.17 42 7.758 41.12 6.88C40.244 6 38.83 6 36 6C33.17 6 31.758 6 30.88 6.88C30 7.756 30 9.17 30 12C30 14.83 30 16.242 30.88 17.12C31.756 18 33.17 18 36 18ZM36 42C38.828 42 40.242 42 41.12 41.12C42 40.242 42 38.828 42 36C42 33.172 42 31.758 41.12 30.88C40.244 30 38.83 30 36 30C33.17 30 31.758 30 30.88 30.88C30 31.756 30 33.17 30 36C30 38.83 30 40.242 30.88 41.12C31.758 42 33.172 42 36 42ZM12 42C14.83 42 16.242 42 17.12 41.12C18 40.244 18 38.83 18 36C18 33.17 18 31.758 17.12 30.88C16.244 30 14.83 30 12 30C9.17 30 7.758 30 6.88 30.88C6 31.756 6 33.17 6 36C6 38.83 6 40.242 6.88 41.12C7.756 42 9.17 42 12 42ZM24 12L18 12M30 36L24 36M36 24L36 18M12 30L12 24" fill-rule="nonzero" stroke="rgb(156.509,255,58.0183)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.000000" />
+	</g>
+</svg>

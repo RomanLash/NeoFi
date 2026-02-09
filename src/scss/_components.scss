@@ -1,2 +1,40 @@
 @use "abstracts/variables" as *;
 @use "abstracts/mixins" as *;
+
+.btn {
+	font-size: $fs-base;
+	font-weight: $regular;
+	line-height: 19px;
+	padding-block: 14px;
+	padding-inline: 24px;
+	border-radius: 40px;
+}
+
+.btn--primary {
+	background-color: $green-color;
+	color: $black-color;
+}
+
+.badge {
+	font-size: $fs-sm;
+	font-weight: $regular;
+	line-height: 17px;
+	color: $green-color;
+	border: 1px solid $grey-3;
+	border-radius: 24px;
+	backdrop-filter: blur(40px);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	gap: 10px;
+
+	span {
+		color: rgba(255, 255, 255, 1);
+		font-size: 22px;
+		font-weight: $medium;
+		line-height: 26px;
+	}
+}

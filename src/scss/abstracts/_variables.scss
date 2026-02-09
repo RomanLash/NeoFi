@@ -1,4 +1,3 @@
-
 $grid-breakpoints: (
 	xs: 0,
 	sm: 576px,
@@ -8,9 +7,14 @@ $grid-breakpoints: (
 	xxl: 1400px
 );
 
-$d-flex: flex;
-$column: column;
-$center: center;
+//colors
+$green-color: rgba(157, 255, 58, 1);
+$black-color: rgba(0, 0, 0, 1);
+$white-color: rgba(229, 229, 229, 1);
+$grey-light: rgba(153, 153, 153, 1);
+$grey-2: rgba(77, 77, 77, 1);
+$grey-3: rgba(46, 46, 46, 1);
+$grey-dark: rgba(15, 15, 15, 1);
 
 //font-weight
 $extra-bold: 800;
@@ -18,3 +22,13 @@ $bold: 700;
 $semibold: 600;
 $medium: 500;
 $regular: 400;
+
+
+//typography
+$fs-xs: 12px;
+$fs-sm: 14px;
+$fs-base: 16px;
+$fs-md: 18px;
+$fs-lg: 20px;
+$fs-mob-title: 28px;
+$fs-desk-title: 48px;
