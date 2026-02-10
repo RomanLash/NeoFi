@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 @forward "sections/hero";
+@forward "sections/partners";
 
 .content {
 

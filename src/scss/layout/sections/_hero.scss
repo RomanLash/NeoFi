@@ -2,6 +2,7 @@
 @use "../../abstracts/mixins" as *;
 
 .hero {
+	position: relative;
 
 	&__row {
 		padding: $padding-container-mob;

@@ -14,7 +14,7 @@
 
 	&__logo {
 		position: relative;
-		z-index: 1001;
+		z-index: 1002;
 
 		span {
 			@include breakpoint(md) {
@@ -44,6 +44,7 @@
 
 		&.is-active {
 			right: 0;
+			z-index: 1001;
 		}
 
 		@include breakpoint(md) {

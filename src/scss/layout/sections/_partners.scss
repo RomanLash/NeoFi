@@ -1,0 +1,35 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/grid" as *;
+
+.partners {
+	position: relative;
+	background-color: $grey-dark;
+	padding: $padding-container-mob;
+
+	&__row {
+		justify-content: center;
+		max-width: $container-max-width;
+		margin-right: auto;
+		margin-left: auto;
+		flex-wrap: wrap;
+		row-gap: 15px;
+
+		@include breakpoint(lg) {
+			gap: 0;
+		}
+	}
+
+	&__content {
+		text-align: center;
+	}
+
+	&__description {
+		@include fluid-text(16, 14);
+
+		display: inline-block;
+		line-height: 19px;
+		color: $grey-light;
+		margin-bottom: 40px;
+	}
+}
