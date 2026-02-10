@@ -1,0 +1,260 @@
+@use "abstracts/variables" as *;
+@use "abstracts/mixins" as *;
+
+
+
+.modal {
+	position: fixed;
+	inset: 0;
+	z-index: 2000;
+
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&.is-active {
+		display: flex;
+	}
+}
+
+.modal__overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.65);
+	backdrop-filter: blur(4px);
+}
+
+.modal__content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 30px 20px 15px 20px;
+	width: 80%;
+	max-width: 450px;
+	min-width: 320px;
+	box-shadow: 0 106px 42px rgba(0, 0, 0, 0.01),
+	0 59px 36px rgba(0, 0, 0, 0.05), 0 26px 26px rgba(0, 0, 0, 0.09),
+	0 7px 15px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+	border-radius: 11px;
+	background-color: white;
+
+	@include breakpoint(sm) {
+		width: 100%;
+		padding: 50px 40px 20px 40px;
+		gap: 16px;
+	}
+}
+
+.modal__close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	background: none;
+	border: none;
+	font-size: 32px;
+	color: $grey-light;
+	cursor: pointer;
+	line-height: 1;
+	transition: color 0.2s;
+
+	&:hover,
+	&:focus {
+		color: $white-color;
+	}
+
+	@include breakpoint(sm) {
+		top: 16px;
+		right: 20px;
+	}
+}
+
+.modal__title {
+	@include fluid-text(28, 22);
+	font-weight: $bold;
+	color: $black-color;
+	text-align: center;
+	margin-bottom: 5px;
+
+	@include breakpoint(sm) {
+		margin-bottom: 10px;
+	}
+}
+
+.modal__subtitle {
+	@include fluid-text(14, 12);
+
+	display: inline-block;
+	color: $grey-light;
+	text-align: center;
+	max-width: 70%;
+	margin-bottom: 20px;
+
+	@include breakpoint(sm) {
+		margin-bottom: 30px;
+		max-width: 80%;
+	}
+}
+
+.modal__input-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 5px;
+}
+
+.modal__icon {
+	width: 20px;
+	position: absolute;
+	z-index: 99;
+	left: 12px;
+	bottom: 7px;
+
+	@include breakpoint(md) {
+		bottom: 9px;
+	}
+}
+
+.modal__input-label {
+	@include fluid-text(14, 12);
+
+	font-weight: 400;
+	color: $grey-2;
+}
+
+.modal__input-field {
+	height: 35px;
+	padding: 0 0 0 40px;
+	border-radius: 7px;
+	outline: none;
+	border: 1px solid #e5e5e5;
+	filter: drop-shadow(0px 1px 0px #efefef)
+	drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+	transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+
+	&::placeholder {
+		@include fluid-text(14, 12);
+	}
+
+	&:focus {
+		border: 1px solid transparent;
+		box-shadow: 0 0 0 2px #242424;
+		background-color: transparent;
+	}
+
+	@include breakpoint(sm) {
+		height: 40px;
+	}
+}
+
+.modal__btn {
+	@include fluid-text(16, 14);
+
+	width: 100%;
+	height: 35px;
+	border-radius: 7px;
+	outline: none;
+	cursor: pointer;
+
+	@include breakpoint(sm) {
+		height: 40px;
+	}
+}
+
+.modal__sign-in_btn {
+	background-color: $green-color;
+	color: $black-color;
+
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus-visible {
+		box-shadow:
+			0 4px 12px rgba(0,0,0,0.15),
+			0 1px 3px rgba(0,0,0,0.12);
+		transform: translateY(-1px);
+		border-color: $black-color;
+	}
+
+	&:active {
+		transform: translateY(0);
+		box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	}
+}
+
+.modal__separator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	width: 100%;
+	color: #8B8E98;
+
+	&-line {
+		width: 100%;
+		height: 1px;
+		border: 0;
+		background-color: #e8e8e8;
+	}
+}
+
+.modal__sign-in--btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	filter: drop-shadow(0px 1px 0px #efefef)
+	drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+}
+
+.modal__sign-in_ggl {
+	border: 1px solid $white-color;
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus-visible {
+		box-shadow:
+			0 4px 12px rgba(0,0,0,0.15),
+			0 1px 3px rgba(0,0,0,0.12);
+		transform: translateY(-1px);
+		border-color: $green-color
+	}
+
+	&:active {
+		transform: translateY(0);
+		box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	}
+}
+
+.modal__sign-in_apl {
+	background-color: $black-color;
+	border: 1px solid #e5e5e5;
+	color: $white-color;
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus-visible {
+		box-shadow:
+			0 4px 12px rgba(0,0,0,0.15),
+			0 1px 3px rgba(0,0,0,0.12);
+		transform: translateY(-1px);
+		border-color: $white-color
+	}
+
+	&:active {
+		transform: translateY(0);
+		box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+	}
+
+}
+
+.modal__note {
+	@include fluid-text(14, 12);
+
+	color: $grey-light;
+	text-decoration: underline;
+	text-decoration-color: $grey-2;
+}

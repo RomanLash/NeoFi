@@ -61,6 +61,16 @@
 		}
 	}
 
+	.header__actions-mobile {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+
+		@include breakpoint(md) {
+			display: none;
+		}
+	}
+
 	&__nav-list {
 		display: flex;
 		flex-direction: column;
@@ -148,7 +158,8 @@
 		display: flex;
 		flex-shrink: 0;
 		transition: 0.25s;
-		padding-inline: 20px;
+		padding-inline: 16px;
+		padding-block: 12px;
 
 		@include breakpoint(md) {
 			@include fluid-text(16, 10);
