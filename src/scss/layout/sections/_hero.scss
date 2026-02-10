@@ -1,0 +1,135 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+
+.hero {
+
+	&__row {
+		padding: $padding-container-mob;
+
+		@include breakpoint(md) {
+			padding: 88px 0;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		margin-bottom: 30px;
+
+		@include breakpoint(md) {
+			margin-bottom: 0;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+
+		@include breakpoint(lg) {
+			margin-top: 70px;
+		}
+	}
+
+	&__badge {
+		padding: 10px 12px;
+		margin-bottom: 16px;
+
+		@include breakpoint(md) {
+			margin-bottom: 25px;
+		}
+
+		span {
+			display: inline-block;
+			border-radius: 50%;
+			width: 9px;
+			height: 9px;
+			background-color: $green-color;
+			margin-right: 5px;
+		}
+	}
+
+	&__title {
+		@include fluid-text(64, 40);
+
+		line-height: 110%;
+		font-weight: $bold;
+		color: $white-color;
+		margin-bottom: 16px;
+		text-align: center;
+
+		@include breakpoint(md) {
+			font-weight: 500;
+			margin-bottom: 25px;
+			text-align: left;
+		}
+	}
+
+	&__description {
+		@include fluid-text(20, 16);
+
+		font-family: Inter,system-ui,sans-serif;
+		font-weight: $regular;
+		line-height: 19px;
+		color: $grey-light;
+		margin-bottom: 30px;
+		text-align: center;
+
+		@include breakpoint(md) {
+			margin-bottom: 40px;
+			line-height: 140%;
+			text-align: left;
+		}
+	}
+
+	&__content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+
+		@include breakpoint(md) {
+			flex-direction: row;
+		}
+	}
+
+	&__btn {
+		font-size: $fs-md;
+		width: fit-content;
+	}
+
+	&__btn--transparent {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		border: 1px solid $grey-3;
+		color: $white-color;
+		font-size: $fs-md;
+	}
+
+	&__image {
+		display: flex;
+		justify-content: center;
+
+		@include breakpoint(md) {
+			justify-content: flex-end;
+			margin-top: 50px;
+		}
+
+		img {
+			width: 80%;
+
+			@include breakpoint(sm) {
+				width: 70%;
+			}
+
+			@include breakpoint(md) {
+				width: 80%;
+			}
+
+			@include breakpoint(lg) {
+				width: 100%;
+			}
+		}
+	}
+}
+

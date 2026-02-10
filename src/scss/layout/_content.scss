@@ -1,7 +1,8 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+@forward "sections/hero";
 
 .content {
-	background-color: lightgreen;
+
 	flex: 1;
 }

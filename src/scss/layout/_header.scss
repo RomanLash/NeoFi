@@ -141,10 +141,12 @@
 		@include breakpoint(md) {
 			@include fluid-text(16, 10);
 			padding-inline: $fs-xs;
+			padding-block: 10px;
 		}
 
 		@include breakpoint(lg) {
 			padding-inline: 24px;
+			padding-block: 12px;
 		}
 
 		&:hover,
@@ -157,7 +159,6 @@
 	&__btn {
 		display: flex;
 		flex-shrink: 0;
-		transition: 0.25s;
 		padding-inline: 16px;
 		padding-block: 12px;
 
@@ -170,13 +171,6 @@
 		@include breakpoint(lg) {
 			padding-inline: 24px;
 			padding-block: $fs-xs;
-		}
-
-		&:hover,
-		&:focus-visible {
-			background-color: lighten($green-color, 8%);
-			transform: scale(1.06);
-			box-shadow: 0 8px 24px -6px color-mix(in srgb, $green-color 40%, transparent);
 		}
 	}
 }
