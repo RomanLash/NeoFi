@@ -1,0 +1,47 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/grid" as *;
+
+.statistics {
+	position: relative;
+	background-color: $grey-dark;
+
+	&__row {
+		padding: $padding-container-mob;
+		max-width: $container-max-width;
+		margin-inline: auto;
+
+		@include breakpoint(md) {
+			padding: 120px 0;
+		}
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 24px;
+		margin-top: 30px;
+
+
+		@include breakpoint(md) {
+			flex-direction: row;
+			gap: 70px;
+		}
+	}
+
+	&__number {
+		font-size: $fs-desk-title;
+		font-weight: $regular;
+		color: $green-color;
+		margin-bottom: 20px;
+	}
+
+	&__content-text {
+		font-family: Inter,system-ui,sans-serif;
+		line-height: 140%;
+		color: $grey-light;
+		text-align: center;
+	}
+}
