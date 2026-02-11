@@ -1,0 +1,83 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/grid" as *;
+
+.technologies {
+	position: relative;
+
+	&__row {
+		padding: $padding-container-mob;
+
+		@include breakpoint(md) {
+			padding: $padding-container-desc;
+		}
+	}
+
+	&__image {
+		display: flex;
+		justify-content: center;
+
+		@include breakpoint(md) {
+			justify-content: flex-start;
+		}
+
+		img {
+			width: 80%;
+
+			@include breakpoint(sm) {
+				width: 70%;
+			}
+
+			@include breakpoint(md) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		@include breakpoint(md) {
+			gap: 40px;
+			margin-top: 20px;
+		}
+	}
+
+	&__card {
+		display: flex;
+		gap: 20px;
+		padding: 24px 20px;
+		border: 1px solid $grey-3;
+		border-radius: 20px;
+
+		@include breakpoint(md) {
+			gap: 24px;
+			padding: 30px 20px;
+		}
+	}
+
+	&__card-icon {
+		display: flex;
+		align-items: flex-start;
+		flex-shrink: 0;
+	}
+
+	&__card-wrapper {}
+
+	&__card-title {
+		@include fluid-text(20, 18);
+
+		font-family: Inter,system-ui,sans-serif;
+		line-height: 140%;
+		color: $white-color;
+		margin-bottom: 8px;
+	}
+
+	&__card-description {
+		color: $grey-light;
+		font-size: $fs-sm;
+		line-height: 19px;
+	}
+}
