@@ -2,6 +2,7 @@
 @use "../abstracts/mixins" as *;
 @forward "sections/hero";
 @forward "sections/partners";
+@forward "sections/features";
 
 .content {
 

@@ -1,0 +1,66 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/grid" as *;
+
+.features {
+	position: relative;
+
+	&__row {
+		padding: $padding-container-mob;
+		row-gap: 20px;
+
+		@include breakpoint(md) {
+			padding: $padding-container-desc;
+		}
+	}
+
+	&__header {
+		margin-bottom: 60px;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		border: 1px solid $grey-3;
+		border-radius: 12px;
+		padding: 30px 24px;
+
+
+		@include breakpoint(sm) {
+			padding: 48px 36px;
+		}
+
+		@include breakpoint(lg) {
+			height: 283px;
+		}
+	}
+
+	&__card-icon {
+		margin-bottom: 36px;
+	}
+
+	&__card-title {
+		font-family: Inter,system-ui,sans-serif;
+		font-size: $fs-lg;
+		line-height: 140%;
+		color: $white-color;
+		margin-bottom: 16px;
+	}
+
+	&__card-description {
+		font-size: $fs-base;
+		color: $grey-light;
+		line-height: 19px;
+		width: 80%;
+
+		@include breakpoint(sm) {
+			width: 70%;
+		}
+
+		@include breakpoint(md) {
+			width: 100%;
+		}
+	}
+}
