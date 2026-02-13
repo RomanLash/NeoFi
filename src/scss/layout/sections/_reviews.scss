@@ -1,0 +1,153 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/grid" as *;
+
+.reviews {
+	position: relative;
+	background-color: $grey-dark;
+
+	&__row {
+		padding: $padding-container-mob;
+		max-width: $container-max-width;
+		margin-inline: auto;
+
+		@include breakpoint(md) {
+			padding: $padding-container-desc;
+		}
+	}
+
+	&__slider-container {
+		position: relative;
+		margin-inline: auto;
+		gap: 20px;
+		width: 100%;
+		max-width: 1440px;
+		margin-top: 30px;
+
+		@include breakpoint(md) {
+			margin-top: 70px;
+		}
+	}
+
+	&__slider {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding: 0 5%;
+		-webkit-overflow-scrolling: touch;
+
+		scrollbar-width: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		@include breakpoint(md) {
+			flex-direction: column;
+			scroll-snap-type: none;
+			scroll-padding: 0;
+		}
+	}
+
+	&__slider-row {
+		display: flex;
+		gap: 20px;
+
+		@include breakpoint(md) {
+			animation-duration: 40s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			will-change: transform;
+		}
+
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+
+	&__slide-top {
+		@include breakpoint(md) {
+			animation-name: scroll-left-right;
+		}
+	}
+
+	@keyframes scroll-left-right {
+		0% {
+			transform: translateX(0);
+		}
+		50% {
+			transform: translateX(-25%);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+
+	&__slide-bottom {
+
+		@include breakpoint(md) {
+			animation-name: scroll-right-left;
+		}
+	}
+
+	@keyframes scroll-right-left {
+		0% {
+			transform: translateX(0);
+		}
+		50% {
+			transform: translateX(25%);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		flex-shrink: 0;
+		width: 320px;
+		gap: 30px;
+		padding: 32px;
+		border: 1px solid $grey-3;
+		border-radius: 16px;
+
+
+		scroll-snap-align: center;
+		scroll-snap-stop: always;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+		@include breakpoint(md) {
+			width: 100%;
+			max-width: 373px;
+		}
+	}
+
+	&__card-text {
+		font-size: $fs-base;
+		line-height: 19px;
+		color: rgba(237, 237, 242, 1);
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	&__user-name {
+		color: $white-color;
+		font-size: $fs-sm;
+		line-height: 17px;
+	}
+
+	&__user-job {
+		color: $grey-2;
+		font-size: $fs-xs;
+		line-height: 14px;
+	}
+}
