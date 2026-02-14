@@ -6,7 +6,7 @@
 	position: relative;
 	background-color: $grey-dark;
 
-	.row {
+	&__row {
 		padding: $padding-container-mob;
 		max-width: $container-max-width;
 		margin-right: auto;
