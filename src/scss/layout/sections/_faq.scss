@@ -1,0 +1,81 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/grid" as *;
+
+.faq {
+	position: relative;
+
+	&__row {
+		padding: $padding-container-mob;
+
+		@include breakpoint(md) {
+			padding: $padding-container-desc;
+		}
+	}
+
+	.section-body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 16px;
+		margin-top: 30px;
+
+		@include breakpoint(md) {
+			gap: 30px;
+		}
+	}
+
+	&__accordion {
+		border: 1px solid $grey-3;
+		width: 100%;
+		max-width: 792px;
+
+		&-header {
+			position: relative;
+			list-style: none;
+			padding: 16px 20px;
+			cursor: pointer;
+			user-select: none;
+			color: $white-color;
+			line-height: 19px;
+
+			span {
+				display: block;
+				margin-right: 30px;
+			}
+
+			&::after {
+				content: "+";
+				position: absolute;
+				right: 20px;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 25px;
+				color: $white-color;
+				transition: transform 0.25s;
+
+				@include breakpoint(sm) {
+					font-size: 35px;
+				}
+			}
+		}
+
+		&-body {
+			max-width: 80%;
+			font-size: $fs-sm;
+			color: $grey-light;
+		}
+	}
+
+	&__accordion[open] summary::after {
+		content: "−";
+		transform: translateY(-50%) rotate(180deg);
+	}
+
+	&__accordion > *:not(summary) {
+		padding: 0 20px 20px 20px;
+	}
+
+
+}

@@ -54,12 +54,15 @@
 
 	&__slider-row {
 		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
 		gap: 20px;
 
 		@include breakpoint(md) {
-			animation-duration: 40s;
+			animation-duration: 120s;
 			animation-timing-function: linear;
 			animation-iteration-count: infinite;
+			animation-direction: normal;
 			will-change: transform;
 		}
 
@@ -70,39 +73,26 @@
 
 	&__slide-top {
 		@include breakpoint(md) {
-			animation-name: scroll-left-right;
-		}
-	}
-
-	@keyframes scroll-left-right {
-		0% {
-			transform: translateX(0);
-		}
-		50% {
-			transform: translateX(-25%);
-		}
-		100% {
-			transform: translateX(0);
-		}
-	}
-
-	&__slide-bottom {
-
-		@include breakpoint(md) {
 			animation-name: scroll-right-left;
 		}
 	}
 
 	@keyframes scroll-right-left {
-		0% {
-			transform: translateX(0);
+		0%   { transform: translateX(0);}
+		50%  {transform: translateX(50%);}
+		100% { transform: translateX(0);}
+	}
+
+	&__slide-bottom {
+		@include breakpoint(md) {
+			animation-name: scroll-left-right;
 		}
-		50% {
-			transform: translateX(25%);
-		}
-		100% {
-			transform: translateX(0);
-		}
+	}
+
+	@keyframes scroll-left-right {
+		0%   { transform: translateX(0);  }
+		50%  {transform: translateX(-50%);}
+		100% { transform: translateX(0);  }
 	}
 
 	&__card {
@@ -114,8 +104,6 @@
 		padding: 32px;
 		border: 1px solid $grey-3;
 		border-radius: 16px;
-
-
 		scroll-snap-align: center;
 		scroll-snap-stop: always;
 		box-shadow: 0 10px 30px rgba(0,0,0,0.4);
@@ -124,6 +112,14 @@
 		@include breakpoint(md) {
 			width: 100%;
 			max-width: 373px;
+		}
+
+		&__card--hidden {
+			display: none;
+
+			@include breakpoint(md) {
+				display: flex;
+			}
 		}
 	}
 
