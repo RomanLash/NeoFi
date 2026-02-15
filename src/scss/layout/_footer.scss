@@ -1,7 +1,144 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+@use "../abstracts/grid" as *;
 
 .footer {
-	background-color: lightblue;
-	padding-block: 60px;
+	position: relative;
+
+	&__container {
+		padding-top: 40px;
+
+		@include breakpoint(md) {
+			padding-top: 80px;
+		}
+	}
+
+	&__row {
+		justify-content: space-between;
+		padding: $padding-container-mob;
+		max-width: $container-max-width;
+		margin-right: auto;
+		margin-left:  auto;
+		gap: 40px;
+
+		@include breakpoint(md) {
+			gap: 0;
+
+		}
+	}
+
+	&__logo {
+		justify-content: center;
+
+		@include breakpoint(md) {
+			justify-content: flex-start;
+		}
+
+
+		span {
+			@include breakpoint(md) {
+				@include fluid-text(22,16)
+			}
+		}
+	}
+
+	&__links-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		@include breakpoint(md) {
+			align-items: flex-start;
+			text-align: start;
+		}
+	}
+
+	&__links-title {
+		font-family: Inter,system-ui,sans-serif;
+		font-size: $fs-lg;
+		color: $white-color;
+		line-height: 140%;
+		margin-bottom: 25px;
+
+		@include breakpoint(md) {
+			@include fluid-text(20,14);
+		}
+	}
+
+	&__links-list {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	&__links {
+		font-size: $fs-sm;
+		line-height: 17px;
+		color: $grey-light;
+		transition: color 0.40s ease;
+
+		&:hover {
+			color: $white-color;
+		}
+	}
+
+	&__email {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		flex: 1;
+		width: 100%;
+		border-bottom: 0.5px solid $grey-light;
+
+		&-input {
+			width: 100%;
+			background-color: transparent;
+			color: $grey-light;
+			padding: 0 10px 10px 0;
+
+			@include breakpoint(md) {
+				@include fluid-text(16, 14);
+			}
+
+			&::placeholder {
+				color: $grey-light;
+			}
+		}
+	}
+
+	&__submit-btn {
+		flex-shrink: 0;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		margin-bottom: 16px;
+
+		@include breakpoint(md) {
+			width: 35px;
+			height: 35px;
+		}
+
+		@include breakpoint(lg) {
+			width: 40px;
+			height: 40px;
+		}
+
+		svg {
+			width: 16px;
+		}
+	}
+
+	&__copyright {
+		display: flex;
+		justify-content: center;
+		padding: $padding-container-mob;
+
+		span {
+			font-size: $fs-xs;
+			line-height: 14px;
+			color: $grey-light;
+		}
+	}
 }
