@@ -14,8 +14,8 @@
 	}
 
 	&__row {
-		justify-content: space-between;
-		padding: $padding-container-mob;
+		justify-content: $justify-between;
+		padding: $padding-spaces-mob;
 		max-width: $container-max-width;
 		margin-right: auto;
 		margin-left:  auto;
@@ -28,10 +28,10 @@
 	}
 
 	&__logo {
-		justify-content: center;
+		justify-content: $justify-center;
 
 		@include breakpoint(md) {
-			justify-content: flex-start;
+			justify-content: $justify-start;
 		}
 
 
@@ -43,14 +43,12 @@
 	}
 
 	&__links-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		@include apply-flex($flex-center-column);
+
 		text-align: center;
 
 		@include breakpoint(md) {
-			align-items: flex-start;
+			align-items: $align-start;
 			text-align: start;
 		}
 	}
@@ -68,8 +66,8 @@
 	}
 
 	&__links-list {
-		display: flex;
-		flex-direction: column;
+		display: $d-flex;
+		flex-direction: $flex-column;
 		gap: 8px;
 	}
 
@@ -85,9 +83,7 @@
 	}
 
 	&__email {
-		position: relative;
-		display: flex;
-		justify-content: space-between;
+		@include apply-flex($flex-between);
 		flex: 1;
 		width: 100%;
 		border-bottom: 0.5px solid $grey-light;
@@ -131,9 +127,9 @@
 	}
 
 	&__copyright {
-		display: flex;
-		justify-content: center;
-		padding: $padding-container-mob;
+		@include apply-flex($flex-center);
+
+		padding: $padding-spaces-mob;
 
 		span {
 			font-size: $fs-xs;

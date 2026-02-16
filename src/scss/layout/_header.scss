@@ -1,20 +1,18 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-
 .header {
 	position: relative;
 	padding-block: 20px;
 	background-color: black;
 
 	&__inner {
-		justify-content: space-between;
-		align-items: center;
+		@include apply-flex($flex-between);
 	}
 
 	&__logo {
 		position: relative;
-		z-index: 1002;
+		z-index: 1001;
 
 		span {
 			@include breakpoint(md) {
@@ -34,25 +32,21 @@
 		overflow-y: auto;
 
 		//mobile
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		@include apply-flex($flex-center-column);
 
 		gap: 70px;
 		background: $black-color;
 
 		&.is-active {
 			right: 0;
-			z-index: 1001;
+			pointer-events: auto;
+			z-index: 1000;
 		}
 
 		@include breakpoint(md) {
+			@include apply-flex($flex-center);
+
 			position: static;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
 			width: auto;
 			height: auto;
 			max-width: none;
@@ -63,8 +57,8 @@
 	}
 
 	.header__actions-mobile {
-		display: flex;
-		align-items: center;
+		@include apply-flex($flex-start-center);
+
 		gap: 16px;
 
 		@include breakpoint(md) {
@@ -73,14 +67,12 @@
 	}
 
 	&__nav-list {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include apply-flex($flex-center-column);
+
 		gap: 60px;
 
 		@include breakpoint(md) {
-			display: flex;
-			flex-direction: row;
+			@include apply-flex($flex-start-center);
 
 			gap: 30px;
 		}
@@ -110,9 +102,8 @@
 		display: none;
 
 		@include breakpoint(md) {
-			display: flex;
-			align-items: center;
-			justify-content: flex-end;
+			@include apply-flex($flex-end-center);
+
 			gap: 8px;
 		}
 
@@ -122,8 +113,8 @@
 	}
 
 	.actions--mobile {
-		display: flex;
-		align-items: center;
+		@include apply-flex($flex-end-center);
+
 		gap: $fs-base;
 
 		@include breakpoint(md) {
@@ -179,7 +170,7 @@
 .header__burger {
 	position: relative;
 	display: flex;
-	flex-direction: column;
+	flex-direction: $flex-column;
 	width: 30px;
 	gap: 4px;
 	padding: 6px 3px;

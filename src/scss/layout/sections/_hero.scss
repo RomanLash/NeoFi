@@ -5,7 +5,7 @@
 	position: relative;
 
 	&__row {
-		padding: $padding-container-mob;
+		padding: $padding-spaces-mob;
 
 		@include breakpoint(md) {
 			padding: 88px 0;
@@ -13,10 +13,7 @@
 	}
 
 	&__content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		@include apply-flex($flex-center-column);
 
 		margin-bottom: 30px;
 
@@ -83,13 +80,12 @@
 	}
 
 	&__content-wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include apply-flex($flex-center-column);
+
 		gap: 20px;
 
 		@include breakpoint(md) {
-			flex-direction: row;
+			@include apply-flex($flex-start-center);
 		}
 	}
 
@@ -99,8 +95,8 @@
 	}
 
 	&__btn--transparent {
-		display: flex;
-		align-items: center;
+		@include apply-flex($flex-start-center);
+
 		gap: 10px;
 		border: 1px solid $grey-3;
 		color: $white-color;
@@ -108,11 +104,11 @@
 	}
 
 	&__image {
-		display: flex;
-		justify-content: center;
+		@include apply-flex($flex-center);
 
 		@include breakpoint(md) {
-			justify-content: flex-end;
+			@include apply-flex($flex-end-center);
+
 			margin-top: 50px;
 		}
 

@@ -17,13 +17,14 @@ $grid-gutter: 30px !default;
 
 $container-max-width: 1230px !default;
 
+
 .container {
 	width: 100%;
 	max-width: $container-max-width;
-	padding-right: $grid-gutter / 2;
-	padding-left:  $grid-gutter / 2;
+	min-width: 320px;
 	margin-right: auto;
 	margin-left:  auto;
+
 }
 
 .container-fluid {
@@ -38,8 +39,8 @@ $container-max-width: 1230px !default;
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: -$grid-gutter / 2;
-	margin-left:  -$grid-gutter / 2;
+	margin-right: 0;
+	margin-left:  0;
 }
 
 .row > * {

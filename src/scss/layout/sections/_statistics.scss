@@ -7,7 +7,7 @@
 	background-color: $grey-dark;
 
 	&__row {
-		padding: $padding-container-mob;
+		padding: $padding-spaces-mob;
 		max-width: $container-max-width;
 		margin-inline: auto;
 
@@ -17,16 +17,13 @@
 	}
 
 	&__body {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		@include apply-flex($flex-center-column);
 		gap: 24px;
 		margin-top: 30px;
 
 
 		@include breakpoint(md) {
-			flex-direction: row;
+			flex-direction: $flex-row;
 			gap: 70px;
 		}
 	}

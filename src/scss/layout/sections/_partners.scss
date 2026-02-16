@@ -5,10 +5,11 @@
 .partners {
 	position: relative;
 	background-color: $grey-dark;
-	padding: $padding-container-mob;
+	padding: $padding-spaces-mob;
 
 	&__row {
-		justify-content: center;
+		@include apply-flex($flex-center);
+
 		max-width: $container-max-width;
 		margin-right: auto;
 		margin-left: auto;

@@ -6,11 +6,11 @@
 	position: relative;
 
 	&__row {
-		padding: $padding-container-mob;
+		padding: $padding-spaces-mob;
 		row-gap: 20px;
 
 		@include breakpoint(md) {
-			padding: $padding-container-desc;
+			padding: $padding-spaces-desc;
 		}
 	}
 
@@ -19,14 +19,12 @@
 	}
 
 	&__card {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		@include apply-flex($flex-center-column);
+
 		text-align: center;
 		border: 1px solid $grey-3;
 		border-radius: 12px;
 		padding: 30px 24px;
-
 
 		@include breakpoint(sm) {
 			padding: 48px 36px;

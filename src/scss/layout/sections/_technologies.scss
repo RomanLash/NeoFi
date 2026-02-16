@@ -6,19 +6,18 @@
 	position: relative;
 
 	&__row {
-		padding: $padding-container-mob;
+		padding: $padding-spaces-mob;
 
 		@include breakpoint(md) {
-			padding: $padding-container-desc;
+			padding: $padding-spaces-desc;
 		}
 	}
 
 	&__image {
-		display: flex;
-		justify-content: center;
+		@include apply-flex($flex-center);
 
 		@include breakpoint(md) {
-			justify-content: flex-start;
+			@include apply-flex($flex-start-center);
 		}
 
 		img {
@@ -35,8 +34,8 @@
 	}
 
 	&__content {
-		display: flex;
-		flex-direction: column;
+		@include apply-flex($flex-center-column);
+
 		gap: 16px;
 
 		@include breakpoint(md) {
@@ -46,7 +45,7 @@
 	}
 
 	&__card {
-		display: flex;
+		display: $d-flex;
 		gap: 20px;
 		padding: 24px 20px;
 		border: 1px solid $grey-3;
@@ -59,12 +58,10 @@
 	}
 
 	&__card-icon {
-		display: flex;
-		align-items: flex-start;
+		display: $d-flex;
+		align-items: $align-start;
 		flex-shrink: 0;
 	}
-
-	&__card-wrapper {}
 
 	&__card-title {
 		@include fluid-text(20, 18);

@@ -7,12 +7,12 @@
 	background-color: $grey-dark;
 
 	&__row {
-		padding: $padding-container-mob;
+		padding: $padding-spaces-mob;
 		max-width: $container-max-width;
 		margin-inline: auto;
 
 		@include breakpoint(md) {
-			padding: $padding-container-desc;
+			padding: $padding-spaces-desc;
 		}
 	}
 
@@ -30,9 +30,7 @@
 	}
 
 	&__slider {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
+		@include apply-flex($flex-start-center);
 		gap: 20px;
 		overflow-x: auto;
 		scroll-snap-type: x mandatory;
@@ -46,16 +44,16 @@
 		}
 
 		@include breakpoint(md) {
-			flex-direction: column;
+			flex-direction: $flex-column;
 			scroll-snap-type: none;
 			scroll-padding: 0;
 		}
 	}
 
 	&__slider-row {
-		display: flex;
+		@include apply-flex($flex-center);
+
 		flex-wrap: nowrap;
-		justify-content: center;
 		gap: 20px;
 
 		@include breakpoint(md) {
@@ -96,8 +94,8 @@
 	}
 
 	&__card {
-		display: flex;
-		flex-direction: column;
+		display: $d-flex;
+		flex-direction: $flex-column;
 		flex-shrink: 0;
 		width: 320px;
 		gap: 30px;
@@ -118,7 +116,7 @@
 			display: none;
 
 			@include breakpoint(md) {
-				display: flex;
+				display: $d-flex;
 			}
 		}
 	}
@@ -130,8 +128,8 @@
 	}
 
 	&__user {
-		display: flex;
-		align-items: center;
+		@include apply-flex($flex-start-center);
+
 		gap: 16px;
 	}
 

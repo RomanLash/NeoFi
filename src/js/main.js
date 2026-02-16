@@ -84,4 +84,42 @@ document.addEventListener("DOMContentLoaded", function() {
 			closeModal();
 		}
 	});
+
+
+
+	////back to top btn
+
+	const btn = document.getElementById("back-to-top");
+	if (!btn) return;
+
+	// Знаходимо першу велику секцію (hero / intro / #hero тощо)
+	const firstSection = document.querySelector("section:first-of-type, #hero, .hero, main > section:first-child");
+
+	if (!firstSection) {
+		// Якщо не знайшли — fallback: з’являємо після 300–500 px
+		window.addEventListener("scroll", () => {
+			btn.classList.toggle("visible", window.scrollY > 400);
+		});
+		return;
+	}
+
+	// Найкращий спосіб — Intersection Observer
+	const observer = new IntersectionObserver(
+		(entries) => {
+			// Якщо перша секція вже НЕ видно (isIntersecting = false) → показуємо кнопку
+			btn.classList.toggle("visible", !entries[0].isIntersecting);
+		},
+		{
+			threshold: 0.1,          // 10% секції ще видно → ще ховаємо кнопку
+			rootMargin: "0px 0px -80px 0px"  // -80px = висота твого фіксованого хедера (підлаштуй)
+		}
+	);
+
+	observer.observe(firstSection);
+
+	// Додатково: клік → плавно наверх (на випадок якщо href="#" не спрацює ідеально)
+	btn.addEventListener("click", (e) => {
+		e.preventDefault();
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	});
 });
