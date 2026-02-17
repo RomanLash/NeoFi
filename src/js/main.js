@@ -5,29 +5,55 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	if (!burger || !menu) return;
 
-	// Функція відкриття/закриття меню
-	burger.addEventListener("click", function(e) {
-		e.preventDefault();
+	let scrollY = 0; // Зберігаємо позицію скролу
+
+	// Функція відкриття/закриття меню + блокування скролу
+	function toggleMenu() {
+		const isOpening = !menu.classList.contains("is-active");
 
 		burger.classList.toggle("is-active");
 		menu.classList.toggle("is-active");
+
+		if (isOpening) {
+			// Відкриваємо меню → блокуємо скрол
+			scrollY = window.pageYOffset || document.documentElement.scrollTop;
+			document.body.style.position = "fixed";
+			document.body.style.top = `-${scrollY}px`;
+			document.body.style.width = "100%";
+			document.body.style.overflow = "hidden"; // додатково для надійності
+		} else {
+			// Закриваємо меню → повертаємо скрол
+			document.body.style.position = "";
+			document.body.style.top = "";
+			document.body.style.width = "";
+			document.body.style.overflow = "";
+
+			// Відновлюємо точну позицію (важливо!)
+			window.scrollTo(0, scrollY);
+		}
+	}
+
+	burger.addEventListener("click", function (e) {
+		e.preventDefault();
+		toggleMenu();
 	});
 
-	// Опціонально: закриття меню при кліку на посилання всередині меню
+	// Закриття меню при кліку на посилання всередині меню
 	const menuLinks = menu.querySelectorAll("a");
-
 	menuLinks.forEach(link => {
 		link.addEventListener("click", () => {
-			burger.classList.remove("is-active");
-			menu.classList.remove("is-active");
+			if (menu.classList.contains("is-active")) {
+				toggleMenu();
+			}
 		});
 	});
 
-	// закриття меню при зміні розміру вікна (якщо екран став десктопним)
+	// Закриття меню при зміні розміру вікна (якщо екран став десктопним)
 	window.addEventListener("resize", () => {
-		if (window.innerWidth >= 768) { // заміни 768 на свій брейкпоінт md
-			burger.classList.remove("is-active");
-			menu.classList.remove("is-active");
+		if (window.innerWidth >= 768) { // заміни 768 на свій md брейкпоінт, якщо інший
+			if (menu.classList.contains("is-active")) {
+				toggleMenu();
+			}
 		}
 	});
 

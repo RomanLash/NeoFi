@@ -30,6 +30,10 @@
 			@include breakpoint(md) {
 				width: 100%;
 			}
+
+			@media (orientation: landscape)  and  (max-width: 991px) {
+				width: 40%;
+			}
 		}
 	}
 
@@ -55,12 +59,22 @@
 			gap: 24px;
 			padding: 30px 20px;
 		}
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			width: 50%;
+		}
 	}
 
 	&__card-icon {
 		display: $d-flex;
 		align-items: $align-start;
 		flex-shrink: 0;
+
+		svg {
+			@media (orientation: landscape)  and  (max-width: 991px) {
+				width: 25px;
+			}
+		}
 	}
 
 	&__card-title {
@@ -70,11 +84,19 @@
 		line-height: 140%;
 		color: $white-color;
 		margin-bottom: 8px;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-base;
+		}
 	}
 
 	&__card-description {
 		color: $grey-light;
 		font-size: $fs-sm;
 		line-height: 19px;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-xs;
+		}
 	}
 }

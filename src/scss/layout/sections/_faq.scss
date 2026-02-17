@@ -29,6 +29,10 @@
 		width: 100%;
 		max-width: 792px;
 
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			width: 50%;
+		}
+
 		&-header {
 			position: relative;
 			list-style: none;
@@ -55,6 +59,10 @@
 
 				@include breakpoint(sm) {
 					font-size: 35px;
+				}
+
+				@media (orientation: landscape)  and  (max-width: 991px) {
+					font-size: 25px;
 				}
 			}
 		}

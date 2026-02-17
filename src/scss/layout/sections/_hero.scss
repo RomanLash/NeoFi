@@ -60,6 +60,10 @@
 			margin-bottom: 25px;
 			text-align: left;
 		}
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: 32px;
+		}
 	}
 
 	&__description {
@@ -77,6 +81,11 @@
 			line-height: 140%;
 			text-align: left;
 		}
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-base;
+			width: 60%;
+		}
 	}
 
 	&__content-wrapper {
@@ -92,6 +101,10 @@
 	&__btn {
 		font-size: $fs-md;
 		width: fit-content;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-base;
+		}
 	}
 
 	&__btn--transparent {
@@ -101,6 +114,10 @@
 		border: 1px solid $grey-3;
 		color: $white-color;
 		font-size: $fs-md;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-base;
+		}
 	}
 
 	&__image {
@@ -125,6 +142,10 @@
 
 			@include breakpoint(lg) {
 				width: 100%;
+			}
+
+			@media (orientation: landscape)  and  (max-width: 991px) {
+				width: 40%;
 			}
 		}
 	}

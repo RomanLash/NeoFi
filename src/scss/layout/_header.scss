@@ -30,6 +30,7 @@
 		transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 		padding-top: 72px;
 		overflow-y: auto;
+		z-index: 1000;
 
 		//mobile
 		@include apply-flex($flex-center-column);
@@ -40,7 +41,6 @@
 		&.is-active {
 			right: 0;
 			pointer-events: auto;
-			z-index: 1000;
 		}
 
 		@include breakpoint(md) {
@@ -79,6 +79,11 @@
 
 		@include breakpoint(lg) {
 			gap: 40px;
+		}
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			@include apply-flex($flex-start-center);
+			gap: 30px;
 		}
 
 		a {
@@ -214,3 +219,4 @@
 		}
 	}
 }
+

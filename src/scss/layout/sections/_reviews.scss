@@ -125,6 +125,10 @@
 		font-size: $fs-base;
 		line-height: 19px;
 		color: rgba(237, 237, 242, 1);
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-sm;
+		}
 	}
 
 	&__user {

@@ -33,6 +33,10 @@
 		font-weight: $regular;
 		color: $green-color;
 		margin-bottom: 20px;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: 40px;
+		}
 	}
 
 	&__content-text {
@@ -40,5 +44,9 @@
 		line-height: 140%;
 		color: $grey-light;
 		text-align: center;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-sm;
+		}
 	}
 }

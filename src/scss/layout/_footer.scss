@@ -82,11 +82,20 @@
 		}
 	}
 
+	&__email-title {
+		text-align: center;
+	}
+
 	&__email {
 		@include apply-flex($flex-between);
 		flex: 1;
 		width: 100%;
 		border-bottom: 0.5px solid $grey-light;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			margin-inline: auto;
+			width: 50%;
+		}
 
 		&-input {
 			width: 100%;

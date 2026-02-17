@@ -33,10 +33,22 @@
 		@include breakpoint(lg) {
 			height: 283px;
 		}
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			margin-inline: auto;
+			width: 70%;
+			padding: 24px 0;
+		}
 	}
 
 	&__card-icon {
 		margin-bottom: 36px;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			svg {
+				width: 32px;
+			}
+		}
 	}
 
 	&__card-title {
@@ -45,6 +57,10 @@
 		line-height: 140%;
 		color: $white-color;
 		margin-bottom: 16px;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-base;
+		}
 	}
 
 	&__card-description {
@@ -59,6 +75,11 @@
 
 		@include breakpoint(md) {
 			width: 100%;
+		}
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-sm;
+			width: 60%;
 		}
 	}
 }

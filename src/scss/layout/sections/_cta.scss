@@ -21,10 +21,20 @@
 		margin-bottom: 0;
 	}
 
+	&__title {
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			width: 80%;
+		}
+	}
+
 	&__btn {
 		margin-top: 20px;
-		padding: 14px 24px;
+		padding: 14px 20px;
 		font-size: $fs-md;
 		line-height: 22px;
+
+		@media (orientation: landscape)  and  (max-width: 991px) {
+			font-size: $fs-base;
+		}
 	}
 }
