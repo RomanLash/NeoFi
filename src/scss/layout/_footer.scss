@@ -84,6 +84,10 @@
 
 	&__email-title {
 		text-align: center;
+
+		@include breakpoint(md) {
+			text-align: start;
+		}
 	}
 
 	&__email {
